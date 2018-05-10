@@ -3,7 +3,6 @@ sudo: required
 jdk:
   - oraclejdk8
 before_cache:
-  - sudo docker-compose -f travis/docker-compose.yml up -d
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 env:
@@ -12,4 +11,5 @@ cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-scripts: ./gradlew test && ./gradlew test_integration -i
+before_script:
+  - sudo docker-compose -f travis/docker-compose.yml up -d
