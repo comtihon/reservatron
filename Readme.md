@@ -1,5 +1,7 @@
-# Transaction calculator service  [![Build Status](https://travis-ci.org/comtihon/reservatron.svg?branch=master)](https://travis-ci.org/comtihon/reservatron)
-
+# Reservatron  [![Build Status](https://travis-ci.org/comtihon/reservatron.svg?branch=master)](https://travis-ci.org/comtihon/reservatron)
+Reserve table service.
+Use redis distributed lock to guarantee reliable reservations even when
+multiple instances of Reservatron are running.
 
 ### In docker
 Ensure you've built [Admin](https://github.com/comtihon/tabler) before.
