@@ -1,0 +1,1 @@
+insert into desks (name) values ('test table');
