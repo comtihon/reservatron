@@ -7,8 +7,7 @@ before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 env:
-  - REDIS_HOST=localhost
-  - POSTGRES_HOST=localhost
+  - REDIS_HOST=localhost POSTGRES_HOST=localhost
 cache:
   directories:
     - $HOME/.gradle/caches/
