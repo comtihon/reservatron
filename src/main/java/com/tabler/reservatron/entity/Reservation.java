@@ -6,7 +6,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity(name = "reservations")
+@Entity
+@Table(name = "reservations")
 @Builder
 @Getter
 @NoArgsConstructor
